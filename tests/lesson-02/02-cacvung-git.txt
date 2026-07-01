@@ -1,0 +1,9 @@
+## Tại folder lesson-02 tôi đang tạo ra 3 file mới :
+- 00-key-takeaways.md
+- 01-lythuyet-git.txt
+- 02-cacvung-git.txt
+
+1. Khi mới tạo file và chưa chạy các câu lệnh GIT thì các file này sẽ nằm ở vùng Working.
+2. Sau khi tạo file xong ==> chạy câu lệnh `git add .`  để add toàn bộ file vào vùng Staging Area .
+3. Chạy câu lệnh `git commit -m "message"`  để lưu thay đổi thành 1 commit.
+4. Chạy câu `git push origin main`. để đẩy code lên github

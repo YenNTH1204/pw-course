@@ -1,0 +1,4 @@
+git init : Khởi tạo một Git Repository trong thư mục hiện tại. Và được Git quản lý phiên bản.
+git add <file name> : Chuyển <file name> từ vùng Working Directory sang vùng Staging Area 
+git add .  : Chuyển toàn bộ file đã thay đổi hoặc chưa từng được add từ  vùng Working Directory sang vùng Staging Area 
+git commit -m <message> : Lưu các thành đổi thành 1 phiên bản với nội dung chú thích version trong mục <message>
