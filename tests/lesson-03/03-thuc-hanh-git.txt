@@ -1,0 +1,43 @@
+folder demo
+
+a : Chạy lệnh git init 
+- Local : đã được khởi tạo, Git tạo thư mục ẩn `.git`
+- Working directory : không có file nào
+- Staging Area : không có file nào
+- Repository : không có commit nào
+
+
+b : Tạo file file1.txt, file2.txt, oops/file3.txt 
+- Local : đã được khởi tạo
+- Working directory : có file1.txt, file2.txt, folder oops có chứa file3.txt đang ở trạng thái Untracked
+- Staging Area : không có file nào
+- Repository : không có commit nào
+
+c : Thêm file .gitignore, thêm 2 dòng :
+    i. file1.txt
+    ii. oops/
+- Local : đã được khởi tạo
+- Working directory : 
+    * có file1.txt bị ignore, 
+    * có file2.txt đang ở trạng thái Untracked
+    * có folder oops có chứa file3.txt bị ignore
+    * có .gitignore đang ở trạng thái Untracked
+- Staging Area : không có file nào
+- Repository : không có commit nào
+
+
+d : Chạy lệnh git add .
+- Local : đã được khởi tạo
+- Working directory : 
+    * có file1.txt bị ignore, 
+    * có folder oops có chứa file3.txt bị ignore
+- Staging Area : file2.txt, .gitignore
+- Repository : không có commit nào
+
+e : Chạy lệnh git add .
+- Local : đã được khởi tạo
+- Working directory : 
+    * có file1.txt bị ignore, 
+    * có folder oops có chứa file3.txt bị ignore
+- Staging Area : không có file nào
+- Repository : file2.txt, .gitignore
