@@ -1,0 +1,177 @@
+1. Cấu trúc DOM cơ bản của một trang web bao gồm các thẻ :
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tiêu đề trang</title>
+  </head>
+
+  <body>
+    <header>
+      Phần đầu trang
+    </header>
+
+    <nav>
+      Menu điều hướng
+    </nav>
+
+    <main>
+      <section>
+        <h1>Tiêu đề chính</h1>
+        <p>Nội dung đoạn văn</p>
+      </section>
+
+      <article>
+        Nội dung độc lập
+      </article>
+
+      <aside>
+        Nội dung phụ
+      </aside>
+    </main>
+
+    <footer>
+      Phần cuối trang
+    </footer>
+  </body>
+</html>
+
+Trong đó:
+
+<html>: phần tử gốc, bao toàn bộ trang.
+<head>: chứa metadata, tiêu đề, CSS, script và thông tin cấu hình.
+<body>: chứa toàn bộ nội dung hiển thị trên trình duyệt.
+<header>: phần đầu trang hoặc đầu một khu vực nội dung.
+<nav>: khu vực menu điều hướng.
+<main>: nội dung chính của trang.
+<section>: một nhóm nội dung theo chủ đề.
+<article>: nội dung độc lập như bài viết, tin tức.
+<aside>: nội dung phụ, sidebar.
+<footer>: phần cuối trang.
+
+Một số thẻ nội dung thường gặp:
+<h1>...</h1>        <!-- Tiêu đề -->
+<p>...</p>          <!-- Đoạn văn -->
+<a href="">...</a>  <!-- Liên kết -->
+<img src="">        <!-- Hình ảnh -->
+<div>...</div>      <!-- Khối nội dung -->
+<span>...</span>    <!-- Nội dung nội tuyến -->
+<ul>...</ul>        <!-- Danh sách không thứ tự -->
+<ol>...</ol>        <!-- Danh sách có thứ tự -->
+<li>...</li>        <!-- Một phần tử danh sách -->
+<form>...</form>    <!-- Biểu mẫu -->
+<input>             <!-- Ô nhập -->
+<button>...</button><!-- Nút bấm -->
+
+DOM sẽ biểu diễn các thẻ này dưới dạng cây:
+document
+└── html
+    ├── head
+    │   └── title
+    └── body
+        ├── header
+        ├── nav
+        ├── main
+        │   └── section
+        │       ├── h1
+        │       └── p
+        └── footer
+
+Lưu ý: DOM không chỉ gồm “các thẻ”, mà còn gồm các node như Document, Element, Text và Attribute.
+
+
+
+
+2. Cấu trúc HTML của 1 bảng 
+# Cấu trúc HTML của một bảng
+
+Một bảng trong HTML được tạo bằng thẻ `<table>`.
+
+Cấu trúc cơ bản:
+
+```html
+<table>
+    <thead>
+        <tr>
+            <th>Họ tên</th>
+            <th>Tuổi</th>
+            <th>Địa chỉ</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Nguyễn Văn A</td>
+            <td>25</td>
+            <td>Hà Nội</td>
+        </tr>
+
+        <tr>
+            <td>Trần Thị B</td>
+            <td>28</td>
+            <td>Đà Nẵng</td>
+        </tr>
+    </tbody>
+</table>
+```
+
+---
+
+# Các thẻ chính trong bảng
+
+| Thẻ | Ý nghĩa |
+|---|---|
+| `<table>` | Khai báo một bảng |
+| `<thead>` | Phần đầu của bảng, thường chứa tiêu đề các cột |
+| `<tbody>` | Phần nội dung chính của bảng |
+| `<tfoot>` | Phần cuối bảng, thường dùng cho tổng hợp dữ liệu |
+| `<tr>` | **Table Row** – một hàng |
+| `<th>` | **Table Header** – một ô tiêu đề |
+| `<td>` | **Table Data** – một ô dữ liệu |
+
+---
+
+# Cấu trúc dạng cây
+
+```text
+<table>
+│
+├── <thead>
+│     └── <tr>
+│          ├── <th> Họ tên
+│          ├── <th> Tuổi
+│          └── <th> Địa chỉ
+│
+└── <tbody>
+      │
+      ├── <tr>
+      │    ├── <td> Nguyễn Văn A
+      │    ├── <td> 25
+      │    └── <td> Hà Nội
+      │
+      └── <tr>
+           ├── <td> Trần Thị B
+           ├── <td> 28
+           └── <td> Đà Nẵng
+```
+
+---
+
+# Cách nhớ đơn giản
+
+```text
+TABLE
+  ↓
+THEAD → Phần tiêu đề
+  ↓
+TR → Hàng
+  ↓
+TH → Ô tiêu đề
+
+TABLE
+  ↓
+TBODY → Phần dữ liệu
+  ↓
+TR → Hàng
+  ↓
+TD → Ô dữ liệu
+```

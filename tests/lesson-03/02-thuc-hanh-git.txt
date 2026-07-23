@@ -6,7 +6,7 @@ a : Tạo 3 file : file1, file2, file3
 - Repository :
 
 b : Chạy lệnh git init :
-- Local repository: đã được khởi tạo, Git tạo thư mục ẩn `.git`
+- Local : đã được khởi tạo, Git tạo thư mục ẩn `.git`
 - Working Directory: `file1`, `file2`, `file3` đang ở trạng thái Untracked
 - Staging Area: chưa có file nào
 - Repository: chưa có commit nào
